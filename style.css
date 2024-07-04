@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+legend{
+    font-weight: bold;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.whole {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    background-color:white;
+}
+
+.ip {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input:focus{
+    background-color:lightblue;
+
+}
+
+button{
+    margin: 20px;
+    color: white;
+    background-color: cadetblue;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+
+button:hover{
+    background-color: darkblue;
+}
+
+label {
+    flex: 0 0 120px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    .ip {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        margin-right: 0;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    input, select {
+        width: 100%;
+    }
+}
